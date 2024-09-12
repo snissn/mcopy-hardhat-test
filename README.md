@@ -2,10 +2,16 @@
 
 This repo contains a test contract that uses the mcopy assembly instruction. This is meant to be used to determine if an EVM compatible service like Filecoin FEVM supports the MCOPY opcode. 
 
+# Setup
+
+1. use `yarn` to install node dependencies
+2. set up .env config file and set environment variable PRIVATE_KEY with the value of the private key for an account on calibnet
+
 ## Usage
 
 
 ```
+mikers:~/dev/snissn/mcopy-hardhat-test$ yarn
 mikers:~/dev/snissn/mcopy-hardhat-test$ npx hardhat run scripts/deploy.js --network calibnet
 Compiled 1 Solidity file successfully (evm target: cancun).
 Nothing to compile
